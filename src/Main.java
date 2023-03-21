@@ -8,6 +8,7 @@ public class Main {
         System.out.println(result);
         RecursionBinarySearch recursionBinarySearch = new RecursionBinarySearch();
         System.out.println(recursionBinarySearch.recursionBinarySearchFunction(sortedArray, key));
+        System.out.println("kek");
     }
 
 }
