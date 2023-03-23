@@ -1,3 +1,6 @@
+import java.util.Arrays;
+import java.util.Objects;
+
 public class BubbleSort {
     public static void main(String[] args) {
         int[] array = {5, 3, 1, 6, 2, 4};
@@ -8,6 +11,7 @@ public class BubbleSort {
         for (int element : doBubbleSort(array)) {
             System.out.print(element + " ");
         }
+        System.out.println(Arrays.toString(array));
     }
 
 
@@ -24,4 +28,5 @@ public class BubbleSort {
         }
         return array;
     }
+
 }
