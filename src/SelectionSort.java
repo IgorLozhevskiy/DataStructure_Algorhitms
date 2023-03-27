@@ -30,6 +30,7 @@ import java.util.Arrays;
 //    }
 
 public class SelectionSort {
+    //    Сортировка ВЫБОРОМ
     public static void main(String[] args) {
         int[] array = {9, 3, -6, -10, 5, 2, 4, 7, 7, 0};
         System.out.println("Before doSelectionSort" + Arrays.toString(array));
@@ -37,6 +38,22 @@ public class SelectionSort {
         System.out.println("After doSelectionSort" + Arrays.toString(array));
     }
 
+    //    public static int[] doSelectionSort(int[] array) {
+//        for (int i = 0; i < array.length; i++) {
+//            int minIndex = i; // ищем ИНДЕКС минимального значения при проходе по массиву и запоминаем его
+//            for (int j = minIndex + 1; j < array.length; j++) { // следующий индекс после индекса минимального значения
+//                if (array[minIndex] > array[j]) {
+//                    minIndex = j;
+//                }
+//            }
+//            if (array[i] > array[minIndex]) {
+//                int current = array[i];
+//                array[i] = array[minIndex];
+//                array[minIndex] = current;
+//            }
+//        }
+//        return array;
+//    }
     public static int[] doSelectionSort(int[] array) {
         for (int i = 0; i < array.length; i++) {
             int minIndex = i;
